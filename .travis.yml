@@ -12,7 +12,6 @@ cache:
 directories:
   - $HOME/.m2
 script:
-- mvn clean install
-
+- mvn clean compile test package
 after_success:
-  - mvn clean test jacoco:report coveralls:report
+ - mvn clean test jacoco:report org.eluder.coveralls:coveralls-maven-plugin:report
