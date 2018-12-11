@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/giacomogreggio/restaurant-manager/badge.svg?branch=master)](https://coveralls.io/github/giacomogreggio/restaurant-manager?branch=master)
+[![Build Status](https://travis-ci.com/giacomogreggio/restaurant-manager.svg?branch=master)](https://travis-ci.com/giacomogreggio/restaurant-manager)
 
 # restaurant-manager
 Assignment_2 TOS
