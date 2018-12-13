@@ -18,13 +18,13 @@ public class RestaurantBillImpl implements RestaurantBill {
             return 0;
         }
         if (itemsOrdered.size() > 20) {
-            throw new IllegalArgumentException("Cannot order more than 20 elements");
+            throw new RestaurantBillException("Cannot order more than 20 elements");
         }
 
         // Total
         double total = 0;
         for (int i = 0; i < itemsOrdered.size(); i++) {
-            if (itemsOrdered.get(i).getItemType() != null) {
+            if (itemsOrdered.get(i) != null) {
                 total += itemsOrdered.get(i).getPrice();
             } else {
                 throw new IllegalArgumentException("Found a null item");
