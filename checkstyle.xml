@@ -3,9 +3,14 @@
         "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 
 <module name="Checker">
+    <module name="Header">
+        <property name="headerFile" value="headerFile/java.header"/>
+        <property name="fileExtensions" value="java" />
+        <property name="ignoreLines" value="0"/>
+    </module>
     <module name="TreeWalker">
         <module name="BooleanExpressionComplexity">
-            <property name="max" value="5"/>
+          <property name="tokens" value="BXOR,LAND,LOR"/>
         </module>
         <module name="CyclomaticComplexity">
             <property name="max" value="15"/>
@@ -33,16 +38,8 @@
             <property name="allowSingleLineStatement" value="false"/>
         </module>
     </module>
-
-    <module name="FileTabCharacter"/>
     <module name="FileLength">
         <property name="max" value="1000"/>
     </module>
-
-    <module name="Header">
-        <property name="headerFile" value="headerFile/java.header"/>
-        <property name="fileExtensions" value="java" />
-        <property name="ignoreLines" value="0"/>
-    </module>
-
+    <module name="FileTabCharacter"/>
 </module>

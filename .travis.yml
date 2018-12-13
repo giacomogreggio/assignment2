@@ -14,4 +14,4 @@ directories:
 script:
 - mvn clean compile test package
 after_success:
- - mvn clean test jacoco:report org.eluder.coveralls:coveralls-maven-plugin:report
+- mvn clean test jacoco:report org.eluder.coveralls:coveralls-maven-plugin:report
